@@ -2,8 +2,20 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content', '@unocss/nuxt', '@nuxtjs/color-mode'],
-  css: ['@unocss/reset/tailwind.css', '@/assets/style/global.css'],
+  css: ['@unocss/reset/tailwind.css', '@/assets/style/global.css', '@/assets/style/markdown.less'],
   colorMode: {
     classSuffix: '',
+  },
+  content: {
+    highlight: {
+      theme: {
+        // Default theme (same as single string)
+        default: 'github-light',
+        // Theme used if `html.dark`
+        dark: 'github-dark',
+        // Theme used if `html.sepia`
+        sepia: 'monokai',
+      },
+    },
   },
 })

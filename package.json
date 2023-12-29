@@ -20,7 +20,9 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.2",
     "@unocss/nuxt": "^0.58.0",
+    "dayjs": "^1.11.10",
     "eslint": "^8.56.0",
+    "less": "^4.2.0",
     "nuxt": "^3.8.2",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5"
