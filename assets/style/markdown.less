@@ -1,0 +1,84 @@
+.markdown-body {
+  >h2{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+  >h3{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+  >p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  pre {
+    margin: 20px auto;
+    padding: 10px;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #ffffff;
+      /* 设置横向滚动条轨道的背景颜色 */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #9ca3af;
+      /* 设置横向滚动条滑块的背景颜色 */
+      border-radius: 5px;
+      /* 设置横向滚动条滑块的圆角 */
+    }
+
+    /* 修改横向滚动条的滑块在 hover 状态下的颜色 */
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #4b5563;
+      /* 设置横向滚动条滑块 hover 状态下的背景颜色 */
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 28px;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 28px;
+  }
+
+  >code {
+    color: #e53170;
+  }
+
+  blockquote {
+    color: #666;
+    padding: 10px 23px;
+    margin: 22px 0;
+    border-left: 4px solid #cbcbcb;
+    background-color: #f8f8f8;
+  }
+}
+
+body[data-theme=dark] .markdown-body {
+  pre{
+    background-color: #23272d;
+    box-shadow: none;
+    &::-webkit-scrollbar-track {
+      background-color: #23272d; /* 设置横向滚动条轨道的背景颜色 */
+    }
+  }
+}
