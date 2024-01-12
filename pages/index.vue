@@ -8,7 +8,7 @@ console.log('🚀 ~ file: index.vue:8 ~ data ~ data:', postList)
 <template>
   <ul>
     <li v-for="item in postList" :key="item._id" class="flex items-center justify-between mb-5">
-      <NuxtLink :to="item._path" class="opacity-70 hover:opacity-100">
+      <NuxtLink :to="item._path" class="opacity-70 hover:opacity-100 text-5">
         {{ item.title }}
       </NuxtLink>
       <div class="text-gray-400">
