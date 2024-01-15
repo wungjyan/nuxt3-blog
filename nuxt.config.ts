@@ -18,4 +18,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  plugins: [
+    '~/plugins/v-viewer.js',
+  ],
 })

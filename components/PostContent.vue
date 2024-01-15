@@ -5,7 +5,7 @@ const { post } = defineProps({
 </script>
 
 <template>
-  <article>
+  <article v-viewer>
     <h1 class="text-8 font-600">
       {{ post.title }}
     </h1>
