@@ -1,9 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  nitro: {
-    static: true,
-  },
   modules: ['@nuxt/content', '@unocss/nuxt', '@nuxtjs/color-mode'],
   css: ['@unocss/reset/tailwind.css', '@/assets/style/global.css', '@/assets/style/markdown.less'],
   colorMode: {
