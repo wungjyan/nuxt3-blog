@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   content: {
+    documentDriven: true,
     highlight: {
       theme: {
         // Default theme (same as single string)
@@ -18,7 +19,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  // plugins: [
-  //   './plugins/v-viewer.js',
-  // ],
+  plugins: [
+    './plugins/v-viewer.js',
+  ],
 })

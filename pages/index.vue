@@ -7,13 +7,15 @@ console.log('🚀 ~ file: index.vue:8 ~ data ~ data:', postList)
 
 <template>
   <ul>
-    <li v-for="item in postList" :key="item._id" class="flex items-center justify-between mb-5">
-      <NuxtLink :to="item._path" class="opacity-70 hover:opacity-100 text-5">
+    <li v-for="item in postList" :key="item._id" class="mb-12">
+      <NuxtLink :to="item._path" class="text-6 font-700">
         {{ item.title }}
       </NuxtLink>
-      <div class="text-gray-400">
-        {{ formatDate(item.date, 'MM-DD，YYYY') }}
+      <div class="mt-2 text-4">{{ item.description }}</div>
+      <div class="mt-3 text-3">
+        {{ formatDate(item.date, 'DD MMM, YYYY') }}
       </div>
     </li>
   </ul>
 </template>
+
